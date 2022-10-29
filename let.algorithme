@@ -1,0 +1,76 @@
+ALGORITHM three_nb_add
+VAR
+tab: Array of INTEGER[ 100]
+tab1, tab2, tab3, :tab;
+n,m,i,j,sum: INTEGER
+sum:=0;
+
+BEGIN
+write("enter la taille de tableau 1")
+read(n);
+write("enter la taille de tableau 2")
+read(m);
+FOR i FROM 0 to n-1 DO 
+read(tab1[i]);// insert from user 
+END_FOR
+FOR j FROM 0 to n-1 DO 
+read(tab2[i]);// insert from user 
+END_FOR
+
+
+//fusionner les deux tableaux 
+k:=0;
+FOR i FROM 0 to n-1 
+tab3[k]:= tab1 [i];
+k:=k+1;
+END_FOR
+K:= n-1;
+FOR i FROM 0 To m-1 DO
+t3[k+1]:=t2[i];
+END FOR
+
+o:=0
+j:=0
+FOR i FROM 0 to n-1 DO 
+REPEAT
+    IF (x== tab3[j]) THEN 
+    o:=o+1;
+    END_IF
+    j++;
+UNTIL (j>n)
+
+IF (o==1) THEN 
+sum:=sum+t[i]
+END_IF
+END_FOR
+
+
+task n 1 
+
+
+
+ALGORITHM read a sentence
+VAR
+    phrase : STRING[] ;
+    i, mot ,voyelle: INTEGER := 0;
+
+BEGIN
+    Write("entrer une phrase qui se termine par un point");
+    Read(phrase);
+    while (phrase[i]<>".") DO
+    if (i==" ")then
+        mot:=Mot+1;
+    END_IF 
+        
+        if (voyelle[i] == 'a' || voyelle[i]  == 'e' || voyelle[i]  == 'i' || voyelle[i]  == 'o' || voyelle[i]  == 'u' || voyelle[i]  == 'y' ||
+                voyelle[i]  == 'A' || voyelle[i]  == 'E' || voyelle[i]  == 'I' || voyelle[i]  == 'O' || voyelle[i]  == 'U' || voyelle[i]  == 'Y') then 
+
+            voyelle:= voyelle+1;
+                
+        END_if
+    i++;
+    END_WHILE
+
+    write ("le nombre de mot est:" +mot);
+    write ("le nombre de voyelle est:" +voyelle);
+END
